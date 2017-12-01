@@ -1,5 +1,5 @@
 
-}
+
 a:hover {
   background-color: #d9d9d9;
 }
@@ -54,6 +54,7 @@ body {
 
 }
 .btn {
+  display: inline-block;
   background-color: #ce75e8;
   color: #750999;
   text-decoration: none;
@@ -135,12 +136,12 @@ body {
 }
 
 .column-layout {
-  max-width: 1000px;
+  max-width: 2000px;
   display: flex;
 }
 
 .main {
-  max-width: 600px;
+  max-width: 1000px;
   background-color: #d9d9d9;
   color: #750999;
   margin: 40px 10px 0px 10px;
@@ -153,7 +154,7 @@ body {
   
 }
 .sidebar {
-  max-width: 200px;
+  max-width: 500px;
   color: #750999;
   background-color: #d9d9d9;
   margin: 40px 10px 0px 10px;
@@ -170,22 +171,10 @@ body {
   display: flex;
 }
 
-.call-out-1 {
+.call-out-1, .call-out-2 {
   padding: 20px;
-  box-sizing: border-box;
+  width: 45%;
   margin: 20px;
-  width: 30%;
-  background-color: #d9d9d9;
-  color: #750999;
-  border: #ce75e8 4px solid;
-  border-radius: 25px;
-
-}  
-.call-out-2 {
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 20px;
-  width: 30%;
   background-color: #d9d9d9;
   color: #750999;
   border: #ce75e8 4px solid;
@@ -193,10 +182,15 @@ body {
 
 }
 .pic {
-  margin: 20pc 10px;
+  margin: 10px 10px;
   border: #750999 4px solid;
   border-radius: 25px;
-  
+  width: 100px;
+  height: 100px;
 }
 
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left;
+}
 
