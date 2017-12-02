@@ -9,8 +9,8 @@ a:hover {
 }
 body {
   font-family: verdana;
-  background-color: #750999;
-  color: #d9d9d9;
+  background-color: white;
+  color: #750999;
   line-height: 1.6;
   text-align: center;
 }
@@ -48,9 +48,10 @@ body {
 }
 .nav-display {
   display:flex;
-  max-width: 800px;
-  margin-top: 20px;
-  position: relative;
+  max-width: 930px;
+  margin: 0px auto;
+  width: 100%;
+  justify-content: space-between
 
 }
 .btn {
@@ -70,7 +71,6 @@ body {
   border-radius: 25px;
   position: relative;
   max-width: 100px;
-  flex:1;
 }
 .btn-1 {
   background-color: #ce75e8;
@@ -136,50 +136,41 @@ body {
 }
 
 .column-layout {
-  max-width: 2000px;
+  max-width: 800px;
+  background-color: #d9d9d9;
+  line-height: 1.65;
+  padding: 20px 50px;
+  border: #750999 4px solid;
+  border-radius: 5%;
   display: flex;
 }
 
 .main {
-  max-width: 1000px;
-  background-color: #d9d9d9;
-  color: #750999;
-  margin: 40px 10px 0px 10px;
-  line-height: 1.65;
-  padding: 20px 40px;
-  border: #ce75e8 4px solid;
-  border-radius: 50px;
-  flex: 3;
+  padding-right: 20px;
+  flex: 2;
   order: 1;
   
 }
 .sidebar {
-  max-width: 500px;
-  color: #750999;
-  background-color: #d9d9d9;
-  margin: 40px 10px 0px 10px;
-  line-height: 1.65;
-  padding: 20px 20px;
-  border: #ce75e8 4px solid;
-  border-radius: 50px;
+  font-size: 8pt;
   flex:1;
   order:2;
 }
 .call-outs-container {
-  max-width: 800px;
-  margin: 40px 20px 0 auto;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
   display: flex;
+  justify-content: space-between
 }
 
 .call-out-1, .call-out-2 {
   padding: 20px;
-  width: 45%;
-  margin: 20px;
-  background-color: #d9d9d9;
-  color: #750999;
-  border: #ce75e8 4px solid;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #ce75e8;
+  border: #d9d9d9 4px solid;
   border-radius: 25px;
-
+  flex-basis: 49%
 }
 .pic {
   margin: 10px 10px;
@@ -188,9 +179,13 @@ body {
   width: 100px;
   height: 100px;
 }
-
-.vertical-text {
-  transform: rotate(90deg);
-  transform-origin: left;
+button {
+  background-color: #750999;
+  color: #d9d9d9;
+  font-family: verdana;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 15px;
 }
+
 
