@@ -138,6 +138,7 @@ body {
 .column-layout {
   max-width: 800px;
   background-color: #d9d9d9;
+  margin: 10px auto 0 auto;
   line-height: 1.65;
   padding: 20px 50px;
   border: #750999 4px solid;
@@ -152,6 +153,7 @@ body {
   
 }
 .sidebar {
+  padding-left: 10px;
   font-size: 8pt;
   flex:1;
   order:2;
