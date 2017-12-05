@@ -189,5 +189,8 @@ button {
   height: 3rem;
   border-radius: 15px;
 }
-
-
+#map {
+        height: 400px;
+        width: 100%;
+        margin: 20px;
+       }
