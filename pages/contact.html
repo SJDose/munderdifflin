@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <div class="nav-display">
+    <a href="home.html" class="btn-1">Home</a>
+    <a href="contact.html" class="btn-2">Contact Us</a> 
+    <a href="ps.html" class="btn-3">Products and Services</a>
+  </div>
+  
+  <div class="column-layout">
+    <div class="main">
+      <h2>Location</h2>
+      <p>849 North Main Street<br>
+      Savanah, GA 31302</p>
+      <p><b>Phone</b> 681-289-5401</p>
+      <p><b>E-Mail</b>info@m&d.com</p>
+    </div>
+    
+    <div class="sidebar">
+      <h2>Hours of Operation</h2>
+      <p><b>Mon-Fri:</b> 10am-5pm<br>
+      <b>Sat:</b>12am-5am</p>
+    </div>
+    
+  </div>
+  
+  <div id="map"></div>
+
+  <div class="call-outs-container">
+    <div class="call-out-1">
+      <h4>Save on the Web</h4>
+      <p>Recieve a free promo code when you follow us on instagram, or when you like us on facebook!</p>
+      <button>Learn More!</button>
+    </div>
+  
+    <div class="call-out-2">
+      <h4>Save by Mail</h4>
+      <p>Subscribe to our mailing catalog to recieve great offers and deals each month!</p>
+      <button>Learn More!</button>
+    </div>
+  </div>
+  
+  <script>
+      function initMap() {
+        var uluru = {lat: 32.0770062, lng: -81.0928914};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QkwTYe_NC_n_WNsu7RNmjMsJsyn1EfQ&callback=initMap">
+    </script>
+    
+</body>
