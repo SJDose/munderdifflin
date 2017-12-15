@@ -29,7 +29,10 @@
     </ul>
   </div>
 </div>
-<div class="call-outs-container">
+<div class="button">
+  <button id="hidebutton" onclick="hideOffers()">Hide Offers</button></div>
+
+<div  id="specialoffers"  class="call-outs-container">
   <div class="call-out-1">
     <h4>Save on the Web</h4>
     <p>Recieve a free promo code when you follow us on instagram, or when you like us on facebook!</p>
@@ -41,5 +44,17 @@
     <button>Learn More!</button>
   </div>
 </div>
+
+<script>
+      function hideOffers() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+
+        x.style.display="none";
+        y.style.display="none";
+
+      }
+    </script>
+    
 </body>
       
